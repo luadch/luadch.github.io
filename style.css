@@ -186,7 +186,7 @@ summary::marker {
 
 summary::after {
 
-   content: "🡆";
+   content: "→";
    position: absolute;
    color: #00007F;
    font-size: 12px;
