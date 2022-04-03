@@ -176,7 +176,7 @@ summary {
 
 details[open] > *:not(summary) {
 
-    animation: details-show 500ms ease-in-out;
+    animation: details-show 900ms ease-in-out;
 }
 
 summary::marker {
@@ -189,9 +189,9 @@ summary::after {
    content: "🡆";
    position: absolute;
    color: #00007F;
-   font-size: 1em;
+   font-size: 12px;
    font-weight: bold;
-   left: 0em;
+   left: -.2em;
    top: 0em;
    transition: all 0.5s;
 }
