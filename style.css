@@ -186,13 +186,14 @@ summary::marker {
 
 summary::after {
 
-   content: "→";
+   /* content: "→"; */
+   content: "➤";
    position: absolute;
    color: #00007F;
-   font-size: 12px;
+   font-size: 25px;
    font-weight: bold;
    left: -.2em;
-   top: 0em;
+   top:  -.4em;
    transition: all 0.5s;
 }
 
