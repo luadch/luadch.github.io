@@ -39,7 +39,7 @@ a:focus {
 
 table, th, td {
 
-    border: 0px solid gainsboro;
+    border: 0px solid gainsboro; /* border wieder auf 0 stellen */
     border-collapse: separate;
     border-spacing: 20px 10px;
     vertical-align: top;
@@ -131,4 +131,73 @@ code {
     font-size: 75%;
     width: 469px;
     vertical-align: bottom;
+}
+
+details {
+
+    background: #f7f7f7;
+    border-radius: 15px;
+    /* border: 1px solid #00007F; */
+    padding: 15px;
+    box-shadow: 0 .1rem 1rem -.1rem rgba(0,0,127,.1);
+
+	transition: all .3s;
+	border: thin solid #00007F;
+	overflow: hidden;
+	margin-bottom: 1em;
+
+}
+
+summary {
+
+    position: relative;
+    background: #f7f7f7;
+    color: #00007F;
+    cursor: pointer;
+
+}
+
+#details {
+
+    background: #f7f7f7;
+    border-radius: 15px;
+    border: 0px solid #00007F;
+    padding: 15px;
+
+}
+
+@keyframes details-show {
+    from {
+        opacity:0;
+        transform: var(--details-translate, translateY(-0.5em));
+    }
+}
+
+details[open] > *:not(summary) {
+
+    animation: details-show 500ms ease-in-out;
+}
+
+summary::marker {
+
+   color: transparent;
+}
+
+summary::after {
+
+   content: "🡆";
+   position: absolute;
+   color: #00007F;
+   font-size: 1em;
+   font-weight: bold;
+   left: 0em;
+   top: 0em;
+   transition: all 0.5s;
+}
+
+details[open] summary::after {
+
+   color: green;
+   transform: translate(0,0) rotate(90deg);
+   /* transform: scale(1, -1); */
 }
