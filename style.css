@@ -5,7 +5,7 @@ body {
     font-family: "Verdana", Geneva, sans-serif;
     font-size: 82%;
     color: #000000;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
 }
 
 a:link {
@@ -48,10 +48,15 @@ table, th, td {
 
 td {
 
-    width: 50%;
+    width: 20%;
 }
 
 table {
+
+    table-layout: auto;
+    width: 90%;
+    min-width: 469px;
+    max-width: 700px;
 
     /*border-top: 5px solid #00007F;*/
     border-right: 5px solid #00007F;
@@ -61,6 +66,7 @@ table {
     -moz-border-radius: 65px;
     -webkit-border-radius: 65px;
     border-radius: 65px;
+
 }
 
 hr.style {
@@ -105,7 +111,7 @@ code {
     background-image: url( logo.png );
     background-repeat: no-repeat;
     /*width: 469px;*/
-    width: 500px;
+    width: 469px;
     height: 91px;
 }
 
